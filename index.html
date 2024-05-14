@@ -16,7 +16,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="main-container">
+<body>
     <header>
         <nav>
             <img class="logo" src="images/logo/Booki.png" alt="Logo Booki" title="Accueil">
@@ -28,7 +28,7 @@
     </header>
 
     <main>
-        <section class="nav2">
+        <section class="search_filter">
             <div>
                 <h1>Trouvez votre hébergement pour des vacances de rêve </h1>
                 <p class="disclaimer">En plein centre-ville ou en pleine nature</p>
@@ -36,23 +36,31 @@
             <form action="" method="post">
                 <a href="#" title="Map"><i class="fa-solid fa-location-dot"></i></a>
                 <input type="search" name="Rechercher" id="search" value="Marseille, France" onFocus="this.value='';">
-                <label for="search">Rechercher</label>
+                <label for="search">
+                    <p>Rechercher</p><i class="fa-solid fa-magnifying-glass"></i>
+                </label>
             </form>
-            <ul class="filtres">
-                <li class="fil">Filtres</li>
-                <a href="#">
-                    <li><i class="fa-solid fa-money-bill-wave"></i>Economique</li>
-                </a>
-                <a href="#">
-                    <li><i class="fa-solid fa-person"></i>Familial</li>
-                </a>
-                <a href="#">
-                    <li><i class="fa-solid fa-heart"></i>Romantique</li>
-                </a>
-                <a href="#">
-                    <li><i class="fa-solid fa-fire"></i>Nos pépites</li>
-                </a>
-            </ul>
+            <div class="filtres">
+                <h4>Filtres</h4>
+                <article class="boutons">
+                    <div class="groupe1">
+                        <a href="#">
+                            <p><i class="fa-solid fa-money-bill-wave"></i>Economique</p>
+                        </a>
+                        <a href="#">
+                            <p><i class="fa-solid fa-person"></i>Familial</p>
+                        </a>
+                    </div>
+                    <div class="groupe2">
+                        <a href="#">
+                            <p><i class="fa-solid fa-heart"></i>Romantique</p>
+                        </a>
+                        <a href="#">
+                            <p><i class="fa-solid fa-fire"></i>Nos pépites</p>
+                        </a>
+                    </div>
+                </article>
+            </div>
             <p class="pub"><i class="fa-solid fa-info"></i>plus de 500 logements sont disponibles dans cette ville</p>
         </section>
 
@@ -288,7 +296,7 @@
             <a href="#"> Proposer votre hotel</a>
         </div>
         <div>
-            <H3>Assistance</H3>
+            <h3>Assistance</h3>
             <a href="#">Centre d'aide</a>
             <a href="#">Nous contacter</a>
         </div>
